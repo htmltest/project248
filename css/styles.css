@@ -1,0 +1,201 @@
+@font-face {font-family:Hotpoint; font-weight:300; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Light.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:400; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Regular.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:500; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Medium.ttf") format("truetype")}
+@font-face {font-family:Hotpoint; font-weight:700; font-style:normal; font-display:swap; src:url("fonts/Hotpoint/Hotpoint-Bold.ttf") format("truetype")}
+
+.land-washing-wrapper,
+.land-washing-wrapper *,
+.land-washing-wrapper *::before,
+.land-washing-wrapper *::after {outline:none; box-sizing:border-box; font-family:Hotpoint, sans-serif; letter-spacing:0}
+
+.land-washing-wrapper {background:#FFFFFF; position:relative; overflow:hidden; width:100%}
+.land-washing-wrapper.full {margin-bottom:-60px}
+
+@media (max-width:1167px) {
+    .land-washing-wrapper.full {margin-bottom:0}
+}
+
+.land-washing-container {margin:0 auto; max-width:1168px; width:100%; position:relative}
+
+@media (max-width:1167px) {
+    .land-washing-container {padding:0 10px}
+}
+
+.land-washing-welcome {position:relative; display:flex; align-items:center; justify-content:center; height:450px; background:#000000 url(../img/land-washing-welcome.jpg) no-repeat center; background-size:cover}
+.land-washing-welcome::before {content:""; position:absolute; left:0; top:0; right:50%; bottom:0; margin-right:-32px; background:linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.536) 27.5%, rgba(201, 155, 105, 0.376) 75%, rgba(201, 155, 105, 0) 100%)}
+.land-washing-welcome-title {font-weight:500; font-size:36px; line-height:43px; color:#FFFFFF}
+.land-washing-welcome-text {margin:20px 0 0 0; font-weight:normal; font-size:20px; line-height:30px; color:#FFFFFF}
+.land-washing-welcome-btn {margin:25px 0 0 0; display:flex}
+.land-washing-welcome-btn a {display:flex; align-items:center; justify-content:center; border:1px solid #C99B69; padding:0 24px; color:#C99B69; font-weight:500; font-size:16px; line-height:16px; height:43px; border-radius:4px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s; text-transform:uppercase}
+@media (min-width:1168px) {
+    .land-washing-welcome-btn a:hover {color:#FFFFFF; border-color:#C99B69; background:#C99B69}
+}
+.land-washing-welcome-notice {margin:25px 0 0 0; font-weight:normal; font-size:16px; line-height:24px; color:rgba(255, 255, 255, 0.5)}
+
+@media (max-width:1167px) {
+    .land-washing-welcome {display:block; height:563px; padding:20px 0 0 0; text-align:center; background:#000000 url(../img/land-washing-welcome-mobile.jpg) no-repeat center top; background-size:cover}
+    .land-washing-welcome::before {bottom:auto; margin-right:0; right:0; height:320px; background:linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.536) 53.65%, rgba(201, 155, 105, 0.376) 81.65%, rgba(201, 155, 105, 0) 100%)}
+    .land-washing-welcome-title {font-size:24px; line-height:29px}
+    .land-washing-welcome-text {margin:10px 0 0 0; font-size:15px; line-height:23px}
+    .land-washing-welcome-btn {margin:15px 0 0 0; justify-content:center}
+    .land-washing-welcome-btn a {color:#FFFFFF; border-color:#FFFFFF}
+    .land-washing-welcome-notice {margin:15px 0 0 0; font-size:12px; line-height:18px}
+}
+
+.land-washing-menu {background:#000000; padding:40px 0}
+.land-washing-menu-list {display:flex; align-items:center; justify-content:center}
+.land-washing-menu-item {font-weight:500; font-size:16px; line-height:24px}
+.land-washing-menu-item a {color:rgba(255, 255, 255, 0.6); text-decoration:none; transition:color 0.2s}
+@media (min-width:1168px) {
+    .land-washing-menu-item a:hover {color:#FFFFFF}
+}
+.land-washing-menu-sep {margin:0 60px; width:1px; height:24px; background:rgba(255, 255, 255, 0.6)}
+
+@media (max-width:1167px) {
+    .land-washing-menu {display:none}
+}
+
+.land-washing-design {background:#000000}
+.land-washing-design-container {position:relative; height:400vh}
+.land-washing-wrapper.full .land-washing-design-container {height:calc(400vh - 149px)}
+.land-washing-design-bg {position:absolute; left:50%; top:17.44vh; width:220vh; height:68.11vh; margin:0 0 0 -110vh; background:url(../img/land-washing-desing-bg.png) no-repeat center; background-size:cover}
+.land-washing-design-container.fixed .land-washing-design-bg {position:fixed}
+.land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-bg {top:calc(17.44vh + 149px)}
+.land-washing-design-screen {position:absolute; left:0; top:6.66vh; right:0; transition:opacity 0.1s; display:flex; justify-content:center}
+.land-washing-design-container.fixed .land-washing-design-screen {position:fixed}
+.land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-screen {top:calc(6.66vh + 149px)}
+.land-washing-design-title {position:absolute; left:0; top:6.66vh; right:0; text-align:center; font-weight:normal; font-size:40px; line-height:48px; color:#FFFFFF; transition:opacity 0.1s}
+.land-washing-design-container.fixed .land-washing-design-title {position:fixed}
+.land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-title {top:calc(6.66vh + 149px)}
+.land-washing-design-title-2 {opacity:0}
+.land-washing-design-title-3 {opacity:0}
+.land-washing-design-title-4 {opacity:0}
+.land-washing-design-screen-1 img {margin:20vh 0 0 0; width:82.37vh; transform-origin:center top; transition:opacity 0.1s, transform 0.1s}
+.land-washing-design-screen-3 img {margin:20vh 0 0 0; width:82.37vh; transform-origin:center top; transition:opacity 0.1s, transform 0.1s; opacity:0}
+.land-washing-design-screen-4 img {margin:30vh 0 0 0; width:145.33vh; opacity:0}
+.land-washing-design-screen-4-mobile {display:none}
+
+@media (max-width:1167px) {
+    .land-washing-wrapper.full .land-washing-design-container {height:calc(400vh - 52px)}
+    .land-washing-design-bg {top:36.25vh; width:125vh; height:38.69vh; margin:0 0 0 -62.5vh}
+    .land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-bg {top:calc(36.25vh + 52px)}
+    .land-washing-design-title {top:9.37vh; font-size:24px; line-height:29px}
+    .land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-title {top:calc(9.37vh + 52px)}
+    .land-washing-design-title br {display:none}
+    .land-washing-design-screen {top:0}
+    .land-washing-wrapper.full .land-washing-design-container.fixed .land-washing-design-screen {top:0}
+    .land-washing-design-screen-1 img {margin:35.46vh 0 0 0; width:50vh; transform-origin:35vh top}
+    .land-washing-design-screen-3 img {margin:35.46vh 0 0 0; width:50vh; transform-origin:35vh top}
+    .land-washing-design-screen-4 {display:none}
+    .land-washing-design-screen-4-mobile {display:block; position:relative; overflow:auto; justify-content:left}
+    .land-washing-design-screen-4-mobile::-webkit-scrollbar-thumb {background:transparent; border-radius:0}
+    .land-washing-design-screen-4-mobile::-webkit-scrollbar {width:0; height:0; background:transparent}
+    .land-washing-design-screen-4-mobile img {margin:39.53vh 0 0 0; width:93.43vh; opacity:0}
+}
+
+.land-washing-techs {background:#000000; padding:70px 0 120px 0}
+.land-washing-techs-title {text-align:center; font-weight:normal; font-size:40px; line-height:48px; color:#FFFFFF}
+.land-washing-techs-list {margin:60px -10px 0 -10px}
+.land-washing-techs-list .swiper-slide {width:25%; height:auto; display:flex}
+.land-washing-techs-item {margin:0 10px; background:#1A1A1A; border-radius:12px; padding:20px}
+.land-washing-techs-item-4 {background:#1A1A1A url(../img/land-washing-techs-4-bg.png) no-repeat right top}
+.land-washing-techs-item-icon {display:flex; justify-content:center}
+.land-washing-techs-item-icon svg {display:block; width:60px; height:60px; fill:#C99B69}
+.land-washing-techs-item-4 .land-washing-techs-item-icon svg {width:120px}
+.land-washing-techs-item-title {margin:20px 0 0 0; font-weight:500; font-size:20px; line-height:28px; text-align:center; color:#FFFFFF}
+.land-washing-techs-item-text {margin:20px 0 0 0; font-weight:normal; font-size:16px; line-height:22px; text-align:center; color:#FFFFFF}
+.land-washing-techs-item-save {margin:20px 0 0 0; display:flex; justify-content:center}
+.land-washing-techs-item-save-item {text-align:center; flex-grow:1}
+.land-washing-techs-item-save-item-to {font-weight:normal; font-size:16px; line-height:22px; color:#FFFFFF}
+.land-washing-techs-item-save-item-value {margin:5px 0 0 0; font-weight:bold; font-size:30px; line-height:42px; color:#C99B69}
+.land-washing-techs-item-save-item-text {margin:5px 0 0 0; font-weight:normal; font-size:16px; line-height:22px; color:#FFFFFF}
+.land-washing-techs-item-save-sep {min-width:1px; margin:0 20px; background:rgba(255, 255, 255, 0.1)}
+.land-washing-techs-item-notice {margin:39px 0 0 0; font-weight:normal; font-size:9px; line-height:13px; color:rgba(255, 255, 255, 0.5)}
+
+@media (max-width:1167px) {
+    .land-washing-techs {padding:40px 0 60px 0}
+    .land-washing-techs-title {font-size:24px; line-height:29px}
+    .land-washing-techs-list {margin:40px 25px 0 25px}
+    .land-washing-techs-list .swiper {overflow:visible}
+    .land-washing-techs-list .swiper-slide {width:100%}
+    .land-washing-techs-item {margin:0 5px}
+    .land-washing-techs-item-title {margin:15px 0 0 0}
+    .land-washing-techs-item-text {margin:10px 0 0 0}
+    .land-washing-techs-item-save {margin:10px 0 0 0}
+    .land-washing-techs-item-notice {margin:10px 0 0 0; text-align:center; font-size:8px; line-height:11px}
+    .land-washing-techs-list .swiper-pagination.swiper-pagination-horizontal {display:flex; position:relative; margin:40px 0 0 0; width:auto; left:auto; top:auto; right:auto; bottom:auto; align-items:center; justify-content:center}
+    .land-washing-techs-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:5px; max-width:5px; height:5px; background:#D9D9D9; opacity:1; margin:0 0 0 30px; border-radius:50%; cursor:pointer; position:relative; transition:min-width 0.2s, max-width 0.2s, height 0.2s, background 0.2s}
+    .land-washing-techs-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+    .land-washing-techs-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:10px; max-width:10px; height:10px; background:#C99B69; opacity:1}
+}
+
+.land-washing-catalogue {padding:120px 0 60px 0}
+.land-washing-wrapper.full .land-washing-catalogue {padding-bottom:0}
+.land-washing-catalogue-logo {display:flex; justify-content:center}
+.land-washing-catalogue-logo img {width:142px}
+.land-washing-catalogue-title {margin:20px 0 0 0; text-align:center; font-weight:normal; font-size:40px; line-height:60px; color:#000000}
+.land-washing-catalogue-list {position:relative}
+.land-washing-catalogue-list-wrapper {position:relative; overflow:hidden}
+.land-washing-catalogue-list-inner {margin:0 auto; width:574px}
+.land-washing-catalogue-list .swiper {overflow:visible}
+.land-washing-catalogue-list .swiper-slide {width:100%; padding:60px 0}
+.land-washing-catalogue-item {background:#FFFFFF; padding:24px; background:#FFFFFF; border-radius:12px; opacity:0.6; transition:box-shadow 0.2s, opacity 0.2s, transform 0.2s}
+.land-washing-catalogue-list .swiper-slide-active .land-washing-catalogue-item {box-shadow:0px 0px 60px rgba(0, 0, 0, 0.2); opacity:1}
+.land-washing-catalogue-list .swiper-slide-prev .land-washing-catalogue-item {transform:translateX(125px)}
+.land-washing-catalogue-list .swiper-slide-next .land-washing-catalogue-item {transform:translateX(-125px)}
+.land-washing-catalogue-item-preview {margin:0 -16px; padding:24px 0}
+.land-washing-catalogue-item-preview img {display:block; width:100%}
+.land-washing-catalogue-item-preview-mobile {display:none}
+.land-washing-catalogue-item-ctrl {margin:40px 0 0 0; display:flex; align-items:center; justify-content:center}
+.land-washing-catalogue-list .swiper-slide-active .land-washing-catalogue-item-ctrl {justify-content:space-between}
+.land-washing-catalogue-item-title {font-weight:500; font-size:20px; line-height:30px; color:#000000}
+.land-washing-catalogue-item-link {display:none}
+.land-washing-catalogue-item-link a {display:flex; align-items:center; justify-content:center; border:1px solid #C99B69; padding:0 24px; color:#C99B69; font-weight:500; font-size:16px; line-height:16px; height:43px; border-radius:4px; text-decoration:none; transition:background 0.2s, color 0.2s, border-color 0.2s; text-transform:uppercase}
+@media (min-width:1168px) {
+    .land-washing-catalogue-item-link a:hover {color:#FFFFFF; border-color:#C99B69; background:#C99B69}
+}
+.land-washing-catalogue-list .swiper-slide-active .land-washing-catalogue-item-link {display:block}
+.land-washing-catalogue-list .swiper-button-prev,
+.land-washing-catalogue-list .swiper-button-next {position:absolute; display:block; z-index:2; top:50%; width:30px; height:30px; border:none; border-radius:0; margin:-15px 0 0 0; padding:0; outline:none; -webkit-appearance:none; cursor:pointer; background:none; transform:none; opacity:1}
+.land-washing-catalogue-list .swiper-button-prev::after,
+.land-washing-catalogue-list .swiper-button-next::after {display:none}
+.land-washing-catalogue-list .swiper-button-prev {left:-50px}
+.land-washing-catalogue-list .swiper-button-next {right:-50px}
+.land-washing-catalogue-list .swiper-button-prev svg,
+.land-washing-catalogue-list .swiper-button-next svg {display:block; width:30px; height:30px; fill:#C99B69; transition:fill 0.2s}
+@media (min-width:1168px) {
+    .land-washing-catalogue-list .swiper-button-prev:hover svg,
+    .land-washing-catalogue-list .swiper-button-next:hover svg {fill:#191919}
+}
+.land-washing-catalogue-list .swiper-button-prev.swiper-button-disabled,
+.land-washing-catalogue-list .swiper-button-next.swiper-button-disabled {display:none}
+.land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal {display:flex; position:absolute; margin:0; width:auto; left:0; top:auto; right:0; bottom:4px; align-items:center; justify-content:center}
+.land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {display:block; min-width:10px; max-width:10px; height:10px; background:#191919; opacity:1; margin:0 0 0 36px; border-radius:50%; cursor:pointer; position:relative; transition:min-width 0.2s, max-width 0.2s, height 0.2s, background 0.2s}
+.land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet:first-child {margin:0}
+.land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:16px; max-width:16px; height:16px; background:#C99B69; opacity:1}
+
+@media (max-width:1167px) {
+    .land-washing-catalogue {padding:60px 0 60px 0}
+    .land-washing-catalogue-title {font-size:24px; line-height:36px}
+    .land-washing-catalogue-list {margin:0 -10px}
+    .land-washing-catalogue-list-inner {width:100%}
+    .land-washing-catalogue-list .swiper-slide {padding:40px 0; transform:none !important}
+    .land-washing-catalogue-item {margin:0 10px; padding:20px 10px; opacity:1}
+    .land-washing-catalogue-list .swiper-slide-active .land-washing-catalogue-item {box-shadow:0px 0px 40px rgba(0, 0, 0, 0.2)}
+    .land-washing-catalogue-list .swiper-slide-prev .land-washing-catalogue-item {transform:none}
+    .land-washing-catalogue-list .swiper-slide-next .land-washing-catalogue-item {transform:none}
+    .land-washing-catalogue-item-preview {margin:0}
+    .land-washing-catalogue-item-ctrl {display:block; margin:20px 0 0 0}
+    .land-washing-catalogue-item-title {text-align:center}
+    .land-washing-catalogue-item-link {display:block; margin:10px 0 0 0}
+    .land-washing-catalogue-list-ctrl {position:relative; margin:0 10px; display:flex; justify-content:space-between}
+    .land-washing-catalogue-list .swiper-button-prev,
+    .land-washing-catalogue-list .swiper-button-next {position:relative; top:auto; margin:0}
+    .land-washing-catalogue-list .swiper-button-prev {left:auto}
+    .land-washing-catalogue-list .swiper-button-next {right:auto}
+    .land-washing-catalogue-list .swiper-button-prev.swiper-button-disabled,
+    .land-washing-catalogue-list .swiper-button-next.swiper-button-disabled {display:block}
+    .land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal {position:relative; left:auto; bottom:auto; right:auto}
+    .land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet {min-width:5px; max-width:5px; height:5px; background:#D9D9D9; margin:0 0 0 36px}
+    .land-washing-catalogue-list .swiper-pagination.swiper-pagination-horizontal .swiper-pagination-bullet-active {min-width:10px; max-width:10px; height:10px; background:#C99B69}
+}
